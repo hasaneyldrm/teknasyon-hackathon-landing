@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Cinzel+Decorative:wght@400;700;900&amp;family=Cinzel:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Global GPT - Ateş ve Buzun Şarkısı Güvenliği</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #e2e8f0;
+            --secondary-color: #0d1b2a;
+            --accent-color: #1a202c;
+            --fire-primary: #dd2c00;
+            --fire-secondary: #ff6d00;
+            --ice-primary: #00b0ff;
+            --ice-secondary: #80d8ff;
+        }
+        body {
+            font-family: 'Cinzel', serif;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+        h1,
+        h2,
+        h3 {
+            font-family: 'Cinzel Decorative', cursive;
+        }
+        .bg-stone {
+            background-image: url("https://www.transparenttextures.com/patterns/stone-wall.png");
+        }
+        .bg-frosted {
+            background-image: url("https://www.transparenttextures.com/patterns/ice-age.png");
+        }
+        .dragon-motif {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQq_rY-D5S1f3Z4jK6o2W7x8l9Y1A_0b-C_d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z'), linear-gradient(to right, var(--fire-secondary), transparent);
+            background-repeat: no-repeat, no-repeat;
+            background-position: right -10% center, center;
+            background-size: contain, cover;
+            transition: background-position 0.5s ease-in-out;
+        }
+        .dragon-motif:hover {
+            background-position: right -5% center, center;
+        }
+        .direwolf-motif {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-g6f7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x-y'), linear-gradient(to left, var(--ice-secondary), transparent);
+            background-repeat: no-repeat, no-repeat;
+            background-position: left -10% center, center;
+            background-size: contain, cover;
+            transition: background-position 0.5s ease-in-out;
+        }
+        .direwolf-motif:hover {
+            background-position: left -5% center, center;
+        }
+        .bg-scroll {
+            background-image: url("https://www.transparenttextures.com/patterns/old-paper-2.png");
+            background-color: #f3e9d2;
+            color: #4a2c2a;
+            border-style: solid;
+            border-width: 12px;
+            border-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD-A_0-B-1-C-2-D-3-E-4-F-5-G-6-H-7-I-8-J-9-K-0-L-1-M-2-N-3-O-4-P-5-Q-6-R-7-S-8-T-9-U-0-V-1-W-2-X-3-Y-4-Z') 30 stretch;
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease-in-out;
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZ-nQ_A-y1-z-W_x-U_v-T_s-R_q-P_o-N_m-L_k-J_i-H_g-F_e-D_c-B_a');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .faq-item[open] .faq-icon {
+            transform: rotate(180deg);
+        }
+        .faq-item[open] summary {
+            margin-bottom: 1rem;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+        .faq-item[open] .faq-answer {
+            max-height: 500px;}
+    </style>
+</head>
+<body class="bg-stone">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b-2 border-solid border-orange-900/50 bg-[var(--secondary-color)]/80 px-10 py-5 backdrop-blur-md shadow-lg shadow-black/30">
+<div class="flex items-center gap-4">
+<img src="ggpt.png" alt="Global GPT Logo" class="w-12 h-12 object-contain">
+<h2 class="text-3xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[var(--fire-secondary)] to-[var(--primary-color)]">GLOBAL GPT</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-lg font-semibold">
+<a class="hover:text-[var(--ice-primary)] transition-colors duration-300" href="#security">Kuzey (Buz)</a>
+<a class="hover:text-[var(--fire-primary)] transition-colors duration-300" href="#scalability">Doğu (Ateş)</a>
+<a class="hover:text-[var(--primary-color)] transition-colors duration-300" href="#monitoring">Hisar</a>
+</nav>
+<button class="flex min-w-[150px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-6 bg-gradient-to-r from-[var(--fire-primary)] to-[var(--fire-secondary)] text-white text-lg font-bold tracking-widest shadow-lg shadow-orange-900/50 hover:shadow-xl hover:from-[var(--fire-secondary)] hover:to-[var(--fire-primary)] transition-all duration-300 transform hover:scale-105">
+<span>TAHTINI TALEP ET</span>
+</button>
+</header>
+<main class="flex-1">
+<section class="relative flex min-h-[calc(100vh-90px)] flex-col items-center justify-center p-4 text-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute h-full w-1/2 left-0 bg-gradient-to-r from-[var(--ice-primary)]/30 via-transparent to-transparent direwolf-motif" style="background-image: linear-gradient(to right, rgba(0, 176, 255, 0.2), transparent 70%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2eY1Z-kM6u8o5i0y-L4V7x9p3c1HwG_n2T0jR-sBqD_f-A-g_h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y'); background-size: cover, 110%; background-position: center left;"></div>
+<div class="absolute h-full w-1/2 right-0 bg-gradient-to-l from-[var(--fire-primary)]/30 via-transparent to-transparent dragon-motif" style="background-image: linear-gradient(to left, rgba(221, 44, 0, 0.2), transparent 70%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuARx8f4Y_m3N2l5o9p_q0R-t-v-w-z_B-D-F-H-J-L-N-P-R-T-V-X-Z_a-c-e-g-i-k-m-o-q-s-u-w-y'); background-size: cover, 110%; background-position: center right;"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-[var(--secondary-color)]/50 to-[var(--secondary-color)]"></div>
+</div>
+<div class="max-w-4xl z-10">
+<h1 class="text-6xl md:text-8xl font-black tracking-widest text-shadow-lg shadow-black/50 text-transparent bg-clip-text bg-gradient-to-r from-[var(--ice-secondary)] via-white to-[var(--fire-secondary)]">BİR ATEŞ VE BUZ GÜVENLİK ŞARKISI</h1>
+<p class="mt-6 text-xl md:text-2xl text-gray-200">
+                        Büyük Uygulama Oyununda ya kazanırsınız ya da savunmasız kalırsınız. Global GPT, iOS yapay zeka API anahtarlarınızı tüm tehditlere karşı koruyan Buz ve Ateş'in ittifakıdır.
+                    </p>
+<button class="mt-10 flex min-w-[150px] max-w-[480px] mx-auto cursor-pointer items-center justify-center overflow-hidden rounded-md h-16 px-10 bg-gradient-to-r from-[var(--ice-primary)] via-slate-200 to-[var(--fire-primary)] text-[var(--secondary-color)] text-xl font-bold tracking-widest shadow-lg shadow-blue-900/50 hover:shadow-xl hover:from-[var(--ice-secondary)] hover:via-white hover:to-[var(--fire-secondary)] transition-all duration-300 transform hover:scale-105">
+<span>BAĞLILIK YEMİNİ ET</span>
+</button>
+</div>
+</section>
+<section class="py-24 px-4 md:px-10 bg-stone bg-blend-overlay bg-[var(--secondary-color)]/90" id="features">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="flex flex-col items-center text-center p-8 border-2 border-[var(--ice-primary)] rounded-lg bg-frosted bg-[var(--secondary-color)]/50 shadow-2xl shadow-blue-900/40 transform hover:-translate-y-2 transition-all duration-300" id="security">
+<span class="material-symbols-outlined text-7xl text-[var(--ice-primary)] mb-4 drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]">security</span>
+<h3 class="text-3xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[var(--ice-secondary)] to-white">Anahtar Güvenliği: Aşılamaz Kuzey</h3>
+<p class="text-gray-300 text-lg">"Kuzey Unutmaz." Savunmalarımız Sur'un kendisi kadar soğuk ve boyun eğmezdir. Anahtarlarınız, yabanılların ve Ak Gezenlerin ulaşamayacağı şekilde gelişmiş şifreleme katmanlarında dondurulmuştur.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 border-2 border-[var(--fire-primary)] rounded-lg bg-stone bg-[var(--secondary-color)]/50 shadow-2xl shadow-orange-900/40 transform hover:-translate-y-2 transition-all duration-300" id="scalability">
+<span class="material-symbols-outlined text-7xl text-[var(--fire-primary)] mb-4 drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]">local_fire_department</span>
+<h3 class="text-3xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-r from-[var(--fire-secondary)] to-yellow-300">Performans ve Ölçeklenebilirlik: Ejderha Ateşi</h3>
+<p class="text-gray-300 text-lg">"Dracarys!" Yapay zekanızın tüm gücünü serbest bırakın. Altyapımız ejderha ateşinde dövülmüş, hız ve muazzam ölçeklenebilirlik için inşa edilmiştir. Krallığınız sınır tanımadan genişleyecek, yolunuza çıkan herkesi yakacak.</p>
+</div>
+<div class="flex flex-col items-center text-center p-8 border border-gray-600 rounded-lg bg-[var(--accent-color)]/50 lg:col-span-2 transform hover:-translate-y-2 transition-all duration-300" id="monitoring">
+<span class="material-symbols-outlined text-7xl text-gray-400 mb-4">menu_book</span>
+<h3 class="text-3xl font-bold mb-3">İzleme ve Kontrol: Hisar'ın Bilgeliği</h3>
+<p class="text-gray-300 text-lg">"Bilgi güçtür." Hisar'ın Üstatları gibi, gözlemler ve kaydederiz. Alanınızın zincirlerini dövmek için ayrıntılı günlükler, uyarılar ve ayrıntılı kontrollerle API kullanımınız üzerinde her şeyi bilme gücü kazanın.</p>
+</div>
+</div>
+</section>
+<section class="py-24 px-4 md:px-10 bg-stone bg-blend-overlay bg-[var(--secondary-color)]/90" id="faq">
+<div class="max-w-5xl mx-auto">
+<div class="bg-scroll p-10 md:p-16 shadow-2xl shadow-black/50">
+<h2 class="text-4xl md:text-6xl font-black tracking-wider text-center mb-12 text-[#4a2c2a] drop-shadow-[0_1px_1px_rgba(255,255,255,0.2)]">Üstatlar Konseyi'ni Dinleyin</h2>
+<div class="space-y-6">
+<details class="faq-item group border-b-2 border-[#a1887f]/50 pb-4" name="faq">
+<summary class="flex items-center justify-between cursor-pointer list-none">
+<h3 class="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6d4c41] to-[#3e2723]">API anahtarımı neden sadece iOS uygulamamda saklayamıyorum?</h3>
+<span class="faq-icon"></span>
+</summary>
+<div class="faq-answer">
+<p class="pt-4 text-lg">Bir kuzgun bir mesajla gelir: "En güçlü kale duvarları bile aşılabilir. Anahtarları uygulamanıza sabit kodlamak, kapıyı işgalcilere açık bırakmak gibidir. Geri derleyiciler onları kolayca çıkarabilir ve krallığınızı yağmaya karşı savunmasız bırakabilir."</p>
+</div>
+</details>
+<details class="faq-item group border-b-2 border-[#a1887f]/50 pb-4" name="faq">
+<summary class="flex items-center justify-between cursor-pointer list-none">
+<h3 class="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6d4c41] to-[#3e2723]">Global GPT anahtarlarımı nasıl korur?</h3>
+<span class="faq-icon"></span>
+</summary>
+<div class="faq-answer">
+<p class="pt-4 text-lg">Bizi Kralın Eli olarak düşünün. Uygulamanız doğrudan yapay zeka hizmetine değil, proxy'mize bir istekte bulunur. Ardından gizli anahtarı sunucu tarafında, meraklı gözlerden gizleyerek ekler ve isteği iletiriz. Gerçek anahtar asla açığa çıkmaz, en derin mahzendeki bir ejderha yumurtası kadar güvendedir.</p>
+</div>
+</details>
+<details class="faq-item group border-b-2 border-[#a1887f]/50 pb-4" name="faq">
+<summary class="flex items-center justify-between cursor-pointer list-none">
+<h3 class="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6d4c41] to-[#3e2723]">Ya proxy anahtarım ele geçirilirse?</h3>
+<span class="faq-icon"></span>
+</summary>
+<div class="faq-answer">
+<p class="pt-4 text-lg">Hisar'dan bilge bir strateji. Proxy anahtarınız düşman eline geçerse, onu kontrol panelinizden iptal edip yenisini oluşturabilirsiniz. Eski anahtar körelmiş bir kılıç kadar işe yaramaz hale gelir ve krallığınızın hazinesi (yapay zeka hizmeti hesabınız) el değmemiş kalır.</p>
+</div>
+</details>
+<details class="faq-item group border-b-2 border-[#a1887f]/50 pb-4" name="faq">
+<summary class="flex items-center justify-between cursor-pointer list-none">
+<h3 class="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6d4c41] to-[#3e2723]">Bu, uygulamama gecikme ekler mi?</h3>
+<span class="faq-icon"></span>
+</summary>
+<div class="faq-answer">
+<p class="pt-4 text-lg">Kuzgunlarımız diyarın en hızlılarıdır. Eklenen gecikme ihmal edilebilir, bir kuzgunun göz kırpması kadardır. Küresel sunucu ağımız, mesajlarınızın Dar Deniz'i geçen bir gemiden daha hızlı gitmesini sağlayarak kullanıcılarınızın talep ettiği hızı korur.</p>
+</div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-cover bg-center py-28 px-4" style='background-image: linear-gradient(rgba(13, 27, 42, 0.95) 0%, rgba(13, 27, 42, 1) 100%), url("https://www.transparenttextures.com/patterns/ancient.png"), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCR_g0j-L5mN8o3p-q_R-T-V-X-Z_a-c-e-g-i-k-m-o-q-s-u-w-y-z-A-C-E-G-I-K-M-O-Q-S-U-W-Y");'>
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-5xl md:text-7xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-white to-blue-400">DİZ ÇÖK</h2>
+<p class="mt-8 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+                        Uygulama güvenliğinin Demir Tahtı sizi bekliyor. Global GPT'ye bağlılığınızı bildirin. App Store yıllıklarında mirasınızı güvence altına alın. Çünkü anahtar oyununu oynadığınızda ya kazanırsınız ya da uygulamanız ölür. Orta yol yoktur.
+                    </p>
+<button class="mt-12 flex mx-auto min-w-[150px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-16 px-10 bg-gradient-to-r from-[var(--fire-primary)] to-[var(--fire-secondary)] text-white text-xl font-bold tracking-widest shadow-lg shadow-orange-900/50 hover:shadow-xl hover:from-[var(--fire-secondary)] hover:to-[var(--fire-primary)] transition-all duration-300 transform hover:scale-105">
+<span>TAHTINI TALEP ET</span>
+</button>
+</div>
+</section>
+</main>
+<footer class="bg-black/50 border-t-2 border-gray-700 py-8 px-10 text-center text-gray-500 bg-stone">
+<p>© 2024 Global GPT. Tüm Hakları Saklıdır. Tahta kuruldu, taşlar hareket ediyor.</p>
+</footer>
+</div>
+</body></html>
